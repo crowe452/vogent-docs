@@ -1,17 +1,35 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
-  "description": "Vogent Voice AI platform - build, test, and deploy conversational voice agents with IVR navigation, webhooks, and API integration.",
+  "name": "Vogent Voice AI",
+  "description": "Vogent Voice AI platform - build, test, and deploy humanlike conversational voice agents with IVR navigation, voice cloning, Flow Builder, webhooks, and API integration.",
   "folders": ["docs"],
-  "excludeFolders": ["node_modules", ".git"],
-  "excludeFiles": ["LICENSE", "split-docs.js"],
+  "excludeFolders": ["node_modules", ".git", ".github"],
+  "excludeFiles": ["LICENSE", "CONTRIBUTING.md"],
   "rules": [
     "API base URL is https://api.vogent.ai/api",
     "Authenticate with Authorization: Bearer <api_key> header",
-    "Generate API keys at https://app.vogent.ai in API Keys section",
+    "Generate API keys at https://app.vogent.ai in Settings > API Keys",
     "Webhook signatures use X-Elto-Signature header for HMAC-SHA256 verification",
     "Voice agents require both a prompt and a voice configuration",
     "Use Flow Builder for structured conversation paths with explicit decision points",
     "IVR detection and navigation is available via ivrConfiguration",
-    "Voicelab provides ultra-low-latency TTS with Sesame CSM-1B model"
+    "Voicelab provides ultra-low-latency TTS with Sesame CSM-1B model",
+    "Dial statuses: queued, ringing, in_progress, ended, failed, no_answer, busy",
+    "Webhook events: dial.created, dial.updated, dial.transcript, function_call",
+    "Voice cloning requires 10-30 seconds of clean audio",
+    "Batch dial jobs support up to 10,000 concurrent dials"
+  ],
+  "keywords": [
+    "voice ai",
+    "conversational ai",
+    "voice agents",
+    "ivr",
+    "text to speech",
+    "tts",
+    "voice cloning",
+    "telephony",
+    "outbound calls",
+    "webhooks",
+    "sesame csm-1b"
   ]
 }
