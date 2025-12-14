@@ -1,0 +1,17 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "description": "Vogent Voice AI platform - build, test, and deploy conversational voice agents with IVR navigation, webhooks, and API integration.",
+  "folders": ["docs"],
+  "excludeFolders": ["node_modules", ".git"],
+  "excludeFiles": ["LICENSE", "split-docs.js"],
+  "rules": [
+    "API base URL is https://api.vogent.ai/api",
+    "Authenticate with Authorization: Bearer <api_key> header",
+    "Generate API keys at https://app.vogent.ai in API Keys section",
+    "Webhook signatures use X-Elto-Signature header for HMAC-SHA256 verification",
+    "Voice agents require both a prompt and a voice configuration",
+    "Use Flow Builder for structured conversation paths with explicit decision points",
+    "IVR detection and navigation is available via ivrConfiguration",
+    "Voicelab provides ultra-low-latency TTS with Sesame CSM-1B model"
+  ]
+}
