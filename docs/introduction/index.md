@@ -1,4 +1,4 @@
-[Skip to main content](http://docs.vogent.ai/#content-area)
+[Skip to main content](http://docs.vogent.ai/introduction#content-area)
 [Vogent home page![light logo](https://mintcdn.com/elto-1/ooEImm5m-H0BmxUg/logo/light.svg?fit=max&auto=format&n=ooEImm5m-H0BmxUg&q=85&s=4bdeb0d3b2f061ef727c095d1cbccfeb)![dark logo](https://mintcdn.com/elto-1/ooEImm5m-H0BmxUg/logo/dark.svg?fit=max&auto=format&n=ooEImm5m-H0BmxUg&q=85&s=9cb454e44058d36d3032ca5b13a24149)](http://docs.vogent.ai/)
 Search...
 ⌘K
@@ -51,9 +51,9 @@ Introduction
 
 
 On this page
-  * [Why Vogent](http://docs.vogent.ai/#why-vogent)
-  * [Instead of building this myself?](http://docs.vogent.ai/#instead-of-building-this-myself)
-  * [Instead of using a different platform?](http://docs.vogent.ai/#instead-of-using-a-different-platform)
+  * [Why Vogent](http://docs.vogent.ai/introduction#why-vogent)
+  * [Instead of building this myself?](http://docs.vogent.ai/introduction#instead-of-building-this-myself)
+  * [Instead of using a different platform?](http://docs.vogent.ai/introduction#instead-of-using-a-different-platform)
 
 
 Get Started
@@ -63,10 +63,10 @@ Vogent is a platform for building, testing, and deploying conversational voice A
 Join our [Discord](https://discord.gg/An5z6xhYfS) to get help from the Vogent team, shape our roadmap, and request early access to new features.
 ## [QuickstartGet an agent up and running in a few minutes](http://docs.vogent.ai/quickstart)## [Platform OverviewA deeper dive into the Vogent platform](http://docs.vogent.ai/platform-overview/introduction)
 ## 
-[​](http://docs.vogent.ai/#why-vogent)
+[​](http://docs.vogent.ai/introduction#why-vogent)
 Why Vogent
 ### 
-[​](http://docs.vogent.ai/#instead-of-building-this-myself)
+[​](http://docs.vogent.ai/introduction#instead-of-building-this-myself)
 Instead of building this myself?
 There are effective off-the-shelf solutions for many of the building blocks of voice agents, like live transcription engines, LLMs, and low-latency text-to-speech. Building an _effective_ voice agent, though, involves a number of additional pieces:
   * Robust voice-activity detection (VAD) to detect when a user has finished speaking and when to start speaking
@@ -80,7 +80,7 @@ There are effective off-the-shelf solutions for many of the building blocks of v
 
 Voice AI evolves quickly, with better models and more effective evaluation techniques coming out every week. With Vogent, you can experiment with the latest solutions immediately, instead of having to sift through the noise and implement them yourself.
 ### 
-[​](http://docs.vogent.ai/#instead-of-using-a-different-platform)
+[​](http://docs.vogent.ai/introduction#instead-of-using-a-different-platform)
 Instead of using a different platform?
 Voice AI is a growing space, and it’s exciting that there are different ways to build productive solutions; some may be better fits than others, based on your background and goals. With Vogent, we try to offer the best solution for creating **rigorous, effective voice agents**. Building a voice agent that wows on a demo is easy, but maintaining a voice agent that consistently produces results on millions of dials involves more sophisticated building blocks and a more transparent evaluation loop. In addition to table-stakes features for building and managing voice agents, Vogent provides features like:
   * IVR/phone-tree detection and navigation models
@@ -94,3 +94,5 @@ Everyone’s needs are different, and no one platform can do it all. We pride ou
 ⌘I
 [twitter](https://x.com/vogentai)[linkedin](https://www.linkedin.com/company/vogent)[discord](https://discord.gg/An5z6xhYfS)
 [Powered by](https://www.mintlify.com?utm_campaign=poweredBy&utm_medium=referral&utm_source=elto-1)
+Assistant
+Responses are generated using AI and may contain mistakes.
