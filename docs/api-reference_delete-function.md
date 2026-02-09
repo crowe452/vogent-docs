@@ -1,0 +1,224 @@
+[Skip to main content](http://docs.vogent.ai/api-reference/delete-function#content-area)
+[Vogent home page![light logo](https://mintcdn.com/elto-1/ooEImm5m-H0BmxUg/logo/light.svg?fit=max&auto=format&n=ooEImm5m-H0BmxUg&q=85&s=4bdeb0d3b2f061ef727c095d1cbccfeb)![dark logo](https://mintcdn.com/elto-1/ooEImm5m-H0BmxUg/logo/dark.svg?fit=max&auto=format&n=ooEImm5m-H0BmxUg&q=85&s=9cb454e44058d36d3032ca5b13a24149)](http://docs.vogent.ai/)
+Search...
+⌘K
+  * Support
+  * [Discord](https://discord.gg/An5z6xhYfS)
+  * [Dashboard](https://app.vogent.ai)
+  * [Dashboard](https://app.vogent.ai)
+
+
+Search...
+Navigation
+Functions
+Delete function
+[Guides](http://docs.vogent.ai/introduction)[API Reference](http://docs.vogent.ai/api-reference/introduction)[SDK](http://docs.vogent.ai/sdk/web-sdk)[Voicelab](http://docs.vogent.ai/voicelab/introduction)
+##### API Documentation
+  * [Introduction](http://docs.vogent.ai/api-reference/introduction)
+
+
+##### Dials
+  * [POSTCreate a new dial](http://docs.vogent.ai/api-reference/create-a-new-dial)
+  * [POSTHangup Dial.](http://docs.vogent.ai/api-reference/hangup-dial)
+  * [GETGet Dial](http://docs.vogent.ai/api-reference/get-dial)
+  * [POSTGet Dial Token](http://docs.vogent.ai/api-reference/get-dial-token)
+
+
+##### Agents
+  * [GETList Agents](http://docs.vogent.ai/api-reference/list-agents)
+  * [POSTCreate Agent](http://docs.vogent.ai/api-reference/create-agent)
+  * [PUTUpdate Agent](http://docs.vogent.ai/api-reference/update-agent)
+  * [DELDelete Agent](http://docs.vogent.ai/api-reference/delete-agent)
+
+
+##### Voices
+  * [POSTClone Voice](http://docs.vogent.ai/api-reference/clone-voice)
+  * [GETList Voices](http://docs.vogent.ai/api-reference/list-voices)
+
+
+##### Versioned Prompts
+  * [GETList versioned prompts](http://docs.vogent.ai/api-reference/list-versioned-prompts)
+  * [GETGet versioned prompt](http://docs.vogent.ai/api-reference/get-versioned-prompt)
+  * [PUTUpdate versioned prompt](http://docs.vogent.ai/api-reference/update-versioned-prompt)
+  * [POSTCreate versioned prompt](http://docs.vogent.ai/api-reference/create-versioned-prompt)
+
+
+##### Extractors
+  * [GETGet extractor](http://docs.vogent.ai/api-reference/get-extractor)
+  * [GETList extractors](http://docs.vogent.ai/api-reference/list-extractors)
+  * [POSTCreate extractor](http://docs.vogent.ai/api-reference/create-extractor)
+  * [PUTUpdate extractor](http://docs.vogent.ai/api-reference/update-extractor)
+
+
+##### Phone Numbers
+  * [GETList phone numbers](http://docs.vogent.ai/api-reference/list-phone-numbers)
+  * [GETGet Phone Number](http://docs.vogent.ai/api-reference/get-phone-number)
+  * [PUTUpdate Phone Number](http://docs.vogent.ai/api-reference/update-phone-number)
+  * [POSTCreate a phone number](http://docs.vogent.ai/api-reference/create-number)
+  * [POSTSearch for available numbers](http://docs.vogent.ai/api-reference/search-for-available-numbers)
+  * [POSTPurchase available number (deprecated, use /phone_numbers instead)](http://docs.vogent.ai/api-reference/purchase-available-number)
+  * [DELDelete Phone Number](http://docs.vogent.ai/api-reference/delete-phone-number)
+
+
+##### Functions
+  * [POSTCreate a function](http://docs.vogent.ai/api-reference/create-a-function)
+  * [GETGet function](http://docs.vogent.ai/api-reference/get-function)
+  * [PUTUpdate function](http://docs.vogent.ai/api-reference/update-function)
+  * [DELDelete function](http://docs.vogent.ai/api-reference/delete-function)
+
+
+##### Models
+  * [GETList Models](http://docs.vogent.ai/api-reference/list-models)
+
+
+##### Voicelab
+  * [POSTRun TTS Model](http://docs.vogent.ai/api-reference/run-tts-model)
+  * [POSTRun Multispeaker TTS Model](http://docs.vogent.ai/api-reference/run-multispeaker-tts-model)
+  * [WSSWebsocket TTS](http://docs.vogent.ai/api-reference/voicelab-websocket-tts)
+
+
+##### Batch Dials
+  * [GETList Batch Jobs](http://docs.vogent.ai/api-reference/list-batch-dial-jobs)
+  * [POSTCreate Batch Job](http://docs.vogent.ai/api-reference/create-a-new-batch-dial-job)
+  * [GETGet Batch Job](http://docs.vogent.ai/api-reference/get-batch-dial-job)
+  * [PUTUpdate Batch Job](http://docs.vogent.ai/api-reference/update-batch-dial-job)
+  * [GETList Queued Batch Dials](http://docs.vogent.ai/api-reference/list-queued-dials-for-batch-dial-job)
+  * [POSTPause/Resume Batch Job](http://docs.vogent.ai/api-reference/set-batch-dial-job-paused)
+  * [GETList Batch Dials](http://docs.vogent.ai/api-reference/list-batch-dials)
+
+
+Delete function
+cURL
+Copy
+```
+curl --request DELETE \
+ --url https://api.vogent.ai/api/functions/{id} \
+ --header 'Authorization: Bearer <token>'
+```
+
+200
+Copy
+```
+{
+ "id": "<string>",
+ "name": "<string>",
+ "description": "<string>",
+ "type": "transfer",
+ "allowedNumbers": [
+  {
+   "number": "<string>"
+  }
+ ],
+ "allowAnyNumber": true,
+ "lifecycleMessages": {
+  "started": [
+   "<string>"
+  ]
+ }
+}
+```
+
+Functions
+# Delete function
+Deletes a function, and unlinks it from any agents.
+DELETE
+/
+functions
+/
+{id}
+Try it
+Delete function
+cURL
+Copy
+```
+curl --request DELETE \
+ --url https://api.vogent.ai/api/functions/{id} \
+ --header 'Authorization: Bearer <token>'
+```
+
+200
+Copy
+```
+{
+ "id": "<string>",
+ "name": "<string>",
+ "description": "<string>",
+ "type": "transfer",
+ "allowedNumbers": [
+  {
+   "number": "<string>"
+  }
+ ],
+ "allowAnyNumber": true,
+ "lifecycleMessages": {
+  "started": [
+   "<string>"
+  ]
+ }
+}
+```
+
+#### Authorizations
+[​](http://docs.vogent.ai/api-reference/delete-function#authorization-authorization)
+Authorization
+string
+header
+required
+In the form `Bearer <api_key_here>`. You can find your api key in your dashboard.
+#### Path Parameters
+[​](http://docs.vogent.ai/api-reference/delete-function#parameter-id)
+id
+string
+required
+ID of the function.
+#### Response
+200
+application/json
+Successful operation
+  * Transfer
+  * API
+
+
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-id)
+id
+string
+required
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-name)
+name
+string
+required
+The name of the function.
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-description)
+description
+string
+required
+A description of what the function does.
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-type)
+type
+enum<string>
+required
+Available options: 
+`transfer`, 
+`api`
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-allowed-numbers)
+allowedNumbers
+object[]
+required
+The numbers that the agent is allowed to transfer to.
+Show child attributes
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-allow-any-number)
+allowAnyNumber
+boolean
+required
+Instead of using a fixed list of allowed numbers, allow the agent to transfer to any number (not recommended).
+[​](http://docs.vogent.ai/api-reference/delete-function#response-one-of-0-lifecycle-messages)
+lifecycleMessages
+object
+Messages to display during function execution lifecycle events.
+Show child attributes
+[Update function](http://docs.vogent.ai/api-reference/update-function)[List Models](http://docs.vogent.ai/api-reference/list-models)
+⌘I
+[twitter](https://x.com/vogentai)[linkedin](https://www.linkedin.com/company/vogent)[discord](https://discord.gg/An5z6xhYfS)
+[Powered by](https://www.mintlify.com?utm_campaign=poweredBy&utm_medium=referral&utm_source=elto-1)
+Assistant
+Responses are generated using AI and may contain mistakes.
